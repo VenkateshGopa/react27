@@ -9,7 +9,7 @@ const Card = (props) => {
         <div className="img" style={{ height: 150 }}>450 X300</div>
         <h3>{props.details.name}</h3>
         <h5>{props.details.price}</h5>
-        <button className="addtoc btn" disabled ={props.details.disabled === "false" ? false : true} onClick={addtocart}><span>Add to cart</span></button>
+        <button className="addtoc btn" disabled ={props.details.disabled === "false" ? false : true} onClick={addtocart}><span>{props.details.disabled === "false" ? "Add to card" : "Added to cart"}</span></button>
       </div>
     </div>
   );
